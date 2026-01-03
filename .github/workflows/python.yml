@@ -65,11 +65,11 @@ jobs:
         run: python -m build
 
       - name: Publish packages 📦 to TestPyPI
-        working-directory: ./python
         continue-on-error: true
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
           repository-url: https://test.pypi.org/legacy/
+          packages-dir: python/dist
 
       - name: Warning message
         if: steps.publish.outcome == 'failure'
