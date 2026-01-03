@@ -1,7 +1,7 @@
 from lift_button.lift import Lift
 
 # TEST LIST
-# [] - doors should be CLOSED when Lift is created
+# [X] - doors should be CLOSED when Lift is created
 # [] - should switch lights ON when button is pressed and doors are CLOSED
 # [] - should OPEN the lift doors when lift arrives
 # [] - should switch OFF the lights when lift arrives
@@ -14,3 +14,8 @@ def test_should_create_new_lift():
 def test_doors_should_be_closed_when_lift_is_created():
     lift = Lift()
     assert lift.doors == "CLOSED"
+
+def test_should_switch_lights_on_when_button_is_pressed_and_doors_are_closed():
+    lift = Lift()
+    lift.press_button()
+    assert lift.lights == "ON"
