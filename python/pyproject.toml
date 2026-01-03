@@ -1,6 +1,6 @@
 [project]
 # Update with your actual project details
-name = "lift_button_ibanfr"
+name = "lift_button_python"
 version = "1.0.0"
 # Update with your author details
 authors = [
@@ -18,5 +18,5 @@ license-files = ["LICEN[CS]E*"]
 
 [project.urls]
 # Update with your project URLs
-Homepage = "https://github.com/ibanFR/semantic-release-python"
-Issues = "https://github.com/ibanFR/semantic-release-python/issues"
+Homepage = "https://github.com/ibanFR/semantic-release-python-test"
+Issues = "https://github.com/ibanFR/semantic-release-python-test/issues"

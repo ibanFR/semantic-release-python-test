@@ -26,7 +26,7 @@ jobs:
 
     environment:
       name: testpypi
-      url: https://test.pypi.org/p/lift_button_ibanfr # update with your package name
+      url: https://test.pypi.org/p/lift_button_python # update with your package name
 
     steps:
       - uses: actions/checkout@v6
@@ -73,6 +73,7 @@ jobs:
         with:
           repository-url: https://test.pypi.org/legacy/
           packages-dir: python/dist
+
 
       - name: Warning message
         if: steps.publish.outcome == 'failure'
