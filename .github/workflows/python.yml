@@ -61,10 +61,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build distribution packages
+        if: steps.release.outputs.new_release_published == 'true'
         working-directory: ./python
         run: python -m build
 
       - name: Publish packages 📦 to TestPyPI
+        if: steps.release.outputs.new_release_published == 'true'
         id: publish
         continue-on-error: true
         uses: pypa/gh-action-pypi-publish@release/v1
