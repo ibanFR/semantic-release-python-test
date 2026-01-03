@@ -26,4 +26,5 @@ To run the tests, use the following command:
 PYTHONPATH=src:tests python3 -m pytest
 ```
 
+
 [Creation of virtual environments]: https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#create-a-new-virtual-environment
